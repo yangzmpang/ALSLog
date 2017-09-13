@@ -1,0 +1,6 @@
+framework module Pods_ALSLog_Tests {
+  umbrella header "Pods-ALSLog_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

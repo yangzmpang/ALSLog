@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'ALSLog_Example' do
+  pod 'ALSLog', :path => '../'
+
+
+  target 'ALSLog_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

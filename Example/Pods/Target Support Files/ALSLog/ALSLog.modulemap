@@ -1,0 +1,6 @@
+framework module ALSLog {
+  umbrella header "ALSLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

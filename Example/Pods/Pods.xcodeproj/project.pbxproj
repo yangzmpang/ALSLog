@@ -1,0 +1,1485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023E606B8E4956B248B6737221453F63 /* SentryQueueableRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB95E2A9979B1A8974AB642BCC2563D /* SentryQueueableRequestManager.m */; };
+		030C0EC7163B4626BBDB27BCE8C03356 /* SentryException.h in Headers */ = {isa = PBXBuildFile; fileRef = 4326FCEFBD3F5D09BD1D5A30AA7AD703 /* SentryException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04DBD4829C9F784D14B3578DD7F130AF /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C78B95CA5BB1022C567A002E45AA90B4 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0522EDDCD3C7DCFCEF889C7FB85FE156 /* SentryClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D159852E3F8FF6346129D49651358 /* SentryClient.m */; };
+		07D84AF451C47685D64F89F9C23F50AD /* SentryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCAA3020915A766E600F7C8A42E294 /* SentryContext.m */; };
+		0961A7C82A452A5FF24073905FC5C364 /* SentryKSCrashReportSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E957BE6280CDBFB771D1AD0029367B /* SentryKSCrashReportSink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B1C1FE967B65A418A661A15FC67D7B /* SentryThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0F30FEA029C767E21FDB5F3EE38932 /* SentryThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D13A73E9339A15929E79649992549A8 /* SentryStacktrace.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC517C0A923B1AF87BEC3258FCCCA9 /* SentryStacktrace.m */; };
+		0F501609DA7D9F2D53EB6942913F8D7D /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B09A5ABB9E95F3DB408078A5B1679B /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1188E30755327B6EDF19D678A725173D /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 94EE51E15B160DD9D8CB7CBA362F5FAC /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16D870B4A65F167B89EFFA6315567FAD /* ALSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B74C4B57C9507D49C83C5A2EACD8B77B /* ALSLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19389A2F5F11E43A85DD8A51C3643881 /* NSDictionary+Sanitize.m in Sources */ = {isa = PBXBuildFile; fileRef = DDACF07C5AC475396432684682BA13D0 /* NSDictionary+Sanitize.m */; };
+		1C5AB7D426D57A38E0C73F3E594AA347 /* SentryAsynchronousOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B704350BE65FB1B7FC0AEC84A59F9DFE /* SentryAsynchronousOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CBAEBF9B9346D4518CC35658105EB9D /* SentryUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CD539533538DD81E2A05F6C14E9F /* SentryUser.m */; };
+		1CE454DDAEF2389A6B65C18876B79B61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3714070059381FF7C4E140C801CC46 /* Foundation.framework */; };
+		1D7EEE0FC5057C37137D42820CFEBE12 /* ALSLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D730A3335C3BD30703740AEDF91B40F2 /* ALSLog-dummy.m */; };
+		20F82255D660337C6FD3D90B7F709202 /* SentryEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C6AE122EE3EAAAFAF98AC4A71A7666E6 /* SentryEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2282ABA55AA49E40F5B15F423B725297 /* SentryException.m in Sources */ = {isa = PBXBuildFile; fileRef = A43CCB8AE5F45FD1B8FB332EDC66C189 /* SentryException.m */; };
+		23FC7D32C14C0810D9D5335EFFC23F3C /* NSDictionary+Sanitize.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B2F87C990C0C3582D76C28F064C80F1 /* NSDictionary+Sanitize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26AB5B3C48CD719CB360C3DEAE154E1A /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8E496A1C0924D9766E4710F2FE1E6B /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2994A1BF838DADBD32D8C784B86C82B0 /* NSData+Compression.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8346755BCFBB4AA918F8A95B3D8662 /* NSData+Compression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B1BF9479F5AA429DFF4F1136CE7927D /* SentrySerializable.h in Headers */ = {isa = PBXBuildFile; fileRef = B04751410EE4252B594C81BFD33FA21B /* SentrySerializable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3740F37A9CE88C0119CB68332A023D /* SentryFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = D1805D1991DC8E71AB61CB0614D5E123 /* SentryFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3124E2A85749821FEBAAAC40772ACE24 /* SentryDsn.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E0ACA16C49EBB8C2C1116D661D3F43 /* SentryDsn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3158F4CE933E9E2EB1209A9536D5A958 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 209BDF772443FBA85E22CE8846E9E07E /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		345A2ADBF2C86D333F0244C1E95AED07 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A903EA16D19EA5F39F06591F2872FCD5 /* DDOSLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		34B3403443A2818F10ED6BF8F333AD4B /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = C53107071B16F77ADC97B1CFF80451E5 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36897519F984D94D0829187CE893554B /* SentryThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F5E7A2483684D8D070F5BA03E4F04 /* SentryThread.m */; };
+		36FDDACA09A913F8C396482EC4B31A9F /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B4949F9BB6003AA6389C307F147E948B /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3716E2F6FDA3CDEEBC4B7A2AFBD116D3 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C75BE454DCDC77E687958B6C485C3D5F /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B773099158176D5288E9C3659F917DB /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BAED0C747E71B3953F20D0FA4062E5 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3D9F6EC7C34A8D0573B70489FC3B1F47 /* SentryBreadcrumbTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 228C0465AEAF417B8EC704D603779B8F /* SentryBreadcrumbTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EF74497C660F18E3BD674AF4A29B1BD /* MyCustomFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6CDA257BE74B0CB62CF17EC2D3E548 /* MyCustomFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423F887005BC095A16CB6E17880E7C07 /* MyCustomFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 357736ABC1216A0DCB6E7D6A7E3B50E5 /* MyCustomFormatter.m */; };
+		45F016DA3335BA21F3F7835ADE535B6E /* SentryClient+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7845671C80F3741BB7BBB34B69B7C8 /* SentryClient+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4696A1AA93A39BEB1C773038405A1625 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B3D9688F6D10CE456402D2CEE65076 /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4B53DBCB92F9930F79C5B68ABF28BB7F /* NSDate+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = A81DF59FD249F1AEC71FC107EF489EDA /* NSDate+Extras.m */; };
+		4C0F3CDDDBB8BFCB24F66B6E691FE83A /* SentryBreadcrumbStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FA796363A65D05AA356C5B2DECB514E2 /* SentryBreadcrumbStore.m */; };
+		4DE6B77902B31CBF54EB749AC5F2199A /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E36175FFB3A4C44662E269CE5051338C /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F9B518F1F575445C5639513C9DCEA0F /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CB80488226D0487DB3B323E7DE575941 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		524AD4CFFF04ABB50536F2DDD3622A4C /* SentryQueueableRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C73564239FCD988C577BB0B73D99F0E6 /* SentryQueueableRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		526B0AE766076AF7715F74DE3FE5BFEA /* Sentry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CDD646A6369A853941D22E0BD9A928C /* Sentry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55DE26E72A9AB055A895926C06CA5AFF /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 075EB0F1C4D28D5D32530992FBC91A00 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A8AF322F775AC5B7B22D52006C86F84 /* SentryStacktrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2BF7FF058E809EF24418373D070A5B /* SentryStacktrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C1FAE0281FB1CDE132DD58D4700CDD9 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 18398E57B80C31868393D68CC4FD89D2 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F4D6EBB37E3ACB8233267B5A582E78A /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = D9C847DD0B55D472E4F316EABE19B425 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF6EFC98CEDB5005688A5842DEA1540 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 70DEEE8929F4E7F543BA3F4C30C9EC6F /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		629161355F137A7CA272DDB9B646A925 /* SentryFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C95EDB8F15931BE2CF7B4DB05742E7DF /* SentryFrame.m */; };
+		63DD2FD657CB7CF708B5D961574236AB /* SentryNSURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EDC79D1839734B60A921486DB39841 /* SentryNSURLRequest.m */; };
+		640CCBFE81EB874A6B2659BAB476A224 /* Sentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEB22DBB8CB9878776D328170AA6D60 /* Sentry.framework */; };
+		670FB83681E9B74D7BF1B67AF2A3F367 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3714070059381FF7C4E140C801CC46 /* Foundation.framework */; };
+		689CD0566B4C6C5A4D6A2B45C0167D32 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = C38241F9253E408EC45C891586F2FEE2 /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		69264941FAAB50BCE4DBF9C8AE52DB4F /* SentryLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD2718EB0E4B4F5901E5C98391C63D /* SentryLog.m */; };
+		6B1445C28E77A4B4CF577F2BAEC36122 /* SentryBreadcrumb.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FC0D5C4B456C938B9C34A392AE651C /* SentryBreadcrumb.m */; };
+		6B5C115E9BF9B0FA39DC9E55A53E93FC /* ALSLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B9E29DAAA2E0D8BE6142F6F216B8E08 /* ALSLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD3030CEE13D043BBC4622F5D7F0F6E /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D569039CA7C3C220E47E9E9ED2FDD5E /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71808B49B4F3271122CCEECFACA5E7BA /* SentryDebugMeta.h in Headers */ = {isa = PBXBuildFile; fileRef = 3882ED5DCB22E72661B44812295D9494 /* SentryDebugMeta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		760E67EE7353C4C90C393182DFA8EA9F /* ALSLogData.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D614AC8EA45006B57F6438DC892C46 /* ALSLogData.m */; };
+		78F6EE56FC6BD03C86B653B2427F1167 /* SentryDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E103CE693E2CC696FAEC9980CFFC9D5 /* SentryDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BACFEEEAD89D380165A37F0E9155BAF /* SentrySwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A033BE3FF523959E65E8ABAD7A9403F /* SentrySwizzle.m */; };
+		83CD9E4FB1ED2FDE6562621EEB86895E /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490AE47B7977286A39CDC9403516D341 /* CocoaLumberjack.framework */; };
+		861B7E6BFA7CDF02B12F6CCA0931C1C4 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C9EDBC541A62FD2C35D63E176ECC9 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		86A0BF2F3B4E2064C8F541899055D40E /* SentryRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8DEFFC03E772787B1B91A01B6C93C4 /* SentryRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89FC21C084C3A6E89C62B3A0BA96E5C3 /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA8A1C682162CE8A2BC21A90E5DE32E /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AD51DEE0D3B83D420FB948612AC96DD /* SentrySwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CEDB4F1258E00437925E8F04EB9D85 /* SentrySwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC074611933E555A06EDD094FFC17A5 /* Pods-ALSLog_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4762217FB79FE30E37EAD4689D53FB22 /* Pods-ALSLog_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9279EF5620E865714E664505EB010C08 /* SentryNSURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C8F30F5021467D03BAB4D71DD7A34E3 /* SentryNSURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9439A64C5CF5479D6483EEA7E16EC621 /* SentryKSCrashInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC48CC28E1BE18FFD9336EF6191427B1 /* SentryKSCrashInstallation.m */; };
+		95179F9C4B14DDFB747E741415F39F11 /* SentryError.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5C2DA16BD871BCED05F8C586A9C38 /* SentryError.m */; };
+		97155A6A70A2371A3437B6C96DF70766 /* NSData+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 107F0B0542F09B32033B0C123F5A25A5 /* NSData+Compression.m */; };
+		9CECF0AF69750EC4CE7879FF4EE1135C /* SentryContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 841C7903F4B3D9A0C5F099A4808FA7F7 /* SentryContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FA9EBF9AEFBFAB9CF4AC61F2FCC0368 /* ALSLogConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B348CF26F93123D5C2AE642A9EDCB /* ALSLogConfig.m */; };
+		A13B09AEC3A43D27AC8F88A042831D1E /* Pods-ALSLog_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B906DE1AF8C8DF49A665C87987D2F /* Pods-ALSLog_Example-dummy.m */; };
+		A307AD12DA27419D33AAE4046E4E05F1 /* SentryAsynchronousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C01ECDF8FD90F68AB66F1007D4BC378 /* SentryAsynchronousOperation.m */; };
+		A47ED8E22C3994632D5B7278310F1559 /* Pods-ALSLog_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5906A2180C28E7569241FB858DE8FC27 /* Pods-ALSLog_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5948FAAB52FCA9706501060A9E7D6DB /* SentryBreadcrumb.h in Headers */ = {isa = PBXBuildFile; fileRef = F9212A5411829633641C34A3398A1482 /* SentryBreadcrumb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9AF82F2B1FFD646A8BDAC4B69775852 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D159AC4B0820DBAAB07BDAC860F2D7 /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AC8019CF8CE3E279C3ACC4BA76A6E9CE /* SentryUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 80064DBDF42E316E2C5A25D5DFB4409C /* SentryUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE995E7546B2E5C4C04303D44BC8DEDE /* SentryDebugMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 4544F14301250EED4BC910A9BB78F993 /* SentryDebugMeta.m */; };
+		AF0E68CBC90BCB2298D4D6F44E638DDA /* ALSLogConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E1BE1C894875D1521F51BD8F0C61D85 /* ALSLogConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B156088B816068570E5E6A13BC9AF271 /* SentryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D66700CD03E5ABB568EA5D40D5A6623 /* SentryEvent.m */; };
+		B30C9FE7D1466713C7FC04A7014556E8 /* SentryKSCrashReportSink.m in Sources */ = {isa = PBXBuildFile; fileRef = E74B8DA80581C1041AE8556F35135225 /* SentryKSCrashReportSink.m */; };
+		B3E1E8C66D9D691355CB01A6A082E45D /* SentryFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E67D748CDD8FF7F40927C08737A7E67 /* SentryFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D0D06BC9E98B060F9A773950E6FD0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3714070059381FF7C4E140C801CC46 /* Foundation.framework */; };
+		B543824C23F3DE225EFF57F9A9897B3D /* SentryKSCrashReportConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0B0E3FA7934959A3367A747D12742E2 /* SentryKSCrashReportConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C11FD0640A1B9E535A21FCFEA0C22D0D /* SentryCrashExceptionApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7F0AB8682AFFBA51BC869568B05CD5 /* SentryCrashExceptionApplication.m */; };
+		C603BD4131E3EA727D034ECBCE16CE5A /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 545EAE3E15A89D5CA45A2CA7E291453D /* CocoaLumberjack-dummy.m */; };
+		C66D0A15197E7DB897BE282D21E81EAB /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 1AC899CD8589B246890CB1EC4F8AF8CA /* Info.plist */; };
+		C6962672521DDB34A42134F136BC8D7E /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0B80B93AAA0F84D83537A03CC18135 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA87C414C218CA3A6C89F33132CBE57 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7AF4F122A7FD74FC76A6D7A6D5D99 /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF23256C0D8CD978064836B5183D9DA5 /* SentryError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3C09E953E84B5CBCB6C686BB20B377 /* SentryError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D014EC4C14696B41EFD3B8047FD963D2 /* SentryLog.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9D0E644A97D283D14B12C3C15986D7 /* SentryLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2F93F029E06861EA862104E19CCBAEB /* Pods-ALSLog_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0615D1B4B4B8ADF7064FA021ABFA94 /* Pods-ALSLog_Tests-dummy.m */; };
+		D443A86A133F1FA345C6E800BB57EDE0 /* SentryRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D63761B9A6596AB3D01702D6C3A1A3 /* SentryRequestOperation.m */; };
+		D964D06D7921F4BD32B69DB9C38EEA24 /* SentryClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 29EF2663D204057E85C546FFB1D1B39A /* SentryClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB7D1DF9E469B47B05DC0767D3D843A1 /* SentryCrashExceptionApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = FC78A64A793AFF14792015B295E35B64 /* SentryCrashExceptionApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE330936F976825EAD076AA2FE8C76C2 /* SentryBreadcrumbStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDDB448492543790548730D4BF09D5C /* SentryBreadcrumbStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF0488A5AB9C06F6226776C9684E3BD7 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB23ED08BAD6C53DD10AD438F886EA6 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF1AC8D1E93DF7B791E9CCE311346DA0 /* Sentry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03255D9C81A558F07030FD1EEEEC67F9 /* Sentry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0146C2643C5D4FDCE362A93166BA530 /* SentryDsn.m in Sources */ = {isa = PBXBuildFile; fileRef = E21E4D0C1D70EB704C1B14747AB1F2FB /* SentryDsn.m */; };
+		E1FD02B1DD227068850DFA93B1F2FDD1 /* ALSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9188465D3C056EFAE890EB672046B419 /* ALSLog.m */; };
+		E20FDCD323DD60ACA8B63EA01A61C56F /* SentryFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62B670AA4A63BDD2CBE48361BA1E60 /* SentryFileManager.m */; };
+		E21B652356AEE60D33573F51C379989F /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3066F2A91340B5DF4173DAA91ADA10 /* DDLog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E89F5FC33CBCC80E99F402C2B4EAE4DB /* ALSLogData.h in Headers */ = {isa = PBXBuildFile; fileRef = E98FD079FDDFCCA05D9B5EA74A572682 /* ALSLogData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB4E81D646377BAC1921FCA0D7A083B4 /* SentryKSCrashReportConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0A18153DC206334CCC966D1A7CBA4C /* SentryKSCrashReportConverter.m */; };
+		EFCF2321D32B640212641C6E772822FA /* NSDate+Extras.h in Headers */ = {isa = PBXBuildFile; fileRef = 26193B014EBCCA00C0D4FD60BFEB7556 /* NSDate+Extras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0A8EF93E8942F34C1D5E854218C0E7E /* SentryBreadcrumbTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9893014F7F9DBBF3A3CA964CF1ABD19E /* SentryBreadcrumbTracker.m */; };
+		F616FB01AD981E19FBEDFEA0C7161D02 /* SentryKSCrashInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D60056BE55E60C1CF40C3E9E5ECC502 /* SentryKSCrashInstallation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB8111F98FC21C1AD8265DBA4E0C6A23 /* Sentry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF173D0D5FDE894ED7157BAA783FB5 /* Sentry-dummy.m */; };
+		FCB431DD5379178F9AF60C4F51BF61EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3714070059381FF7C4E140C801CC46 /* Foundation.framework */; };
+		FD2DA251A7CBF9D630294EF669EB0BAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3714070059381FF7C4E140C801CC46 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04DBC6CA3F26D28F87E551BC4E01746B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CF5117C60D675E4B0955727BA2ADD6C;
+			remoteInfo = CocoaLumberjack;
+		};
+		5E133C121A4AAFA6AA1279B5B330F4C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E77C8B4325325734477C2C173AAF7BB3;
+			remoteInfo = Sentry;
+		};
+		B5C8C677CE76EC318FC214F93AD113DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E77C8B4325325734477C2C173AAF7BB3;
+			remoteInfo = Sentry;
+		};
+		CAA04FF24288347F2840F4C09321EDC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CF5117C60D675E4B0955727BA2ADD6C;
+			remoteInfo = CocoaLumberjack;
+		};
+		F729EC952DA2810F074ECD221BCA94F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F83CB98A0E67BB6F1495CAEF493FA6;
+			remoteInfo = ALSLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02852887DD1F5B025D439CD23BD843B5 /* Pods-ALSLog_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALSLog_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		02CCAA3020915A766E600F7C8A42E294 /* SentryContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryContext.m; path = Sources/Sentry/SentryContext.m; sourceTree = "<group>"; };
+		03255D9C81A558F07030FD1EEEEC67F9 /* Sentry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sentry-umbrella.h"; sourceTree = "<group>"; };
+		04F5C2DA16BD871BCED05F8C586A9C38 /* SentryError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryError.m; path = Sources/Sentry/SentryError.m; sourceTree = "<group>"; };
+		075EB0F1C4D28D5D32530992FBC91A00 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		07E957BE6280CDBFB771D1AD0029367B /* SentryKSCrashReportSink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryKSCrashReportSink.h; path = Sources/Sentry/include/SentryKSCrashReportSink.h; sourceTree = "<group>"; };
+		0A7B348CF26F93123D5C2AE642A9EDCB /* ALSLogConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ALSLogConfig.m; sourceTree = "<group>"; };
+		0BA2DAE8F7BEB48D9FBF29BDE79AF5F4 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
+		107F0B0542F09B32033B0C123F5A25A5 /* NSData+Compression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Compression.m"; path = "Sources/Sentry/NSData+Compression.m"; sourceTree = "<group>"; };
+		15B09A5ABB9E95F3DB408078A5B1679B /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
+		15E73FFE570BDD7653AA5AF3886F0E16 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
+		18398E57B80C31868393D68CC4FD89D2 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		1AB95E2A9979B1A8974AB642BCC2563D /* SentryQueueableRequestManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryQueueableRequestManager.m; path = Sources/Sentry/SentryQueueableRequestManager.m; sourceTree = "<group>"; };
+		1AC899CD8589B246890CB1EC4F8AF8CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2F87C990C0C3582D76C28F064C80F1 /* NSDictionary+Sanitize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Sanitize.h"; path = "Sources/Sentry/include/NSDictionary+Sanitize.h"; sourceTree = "<group>"; };
+		1CDD646A6369A853941D22E0BD9A928C /* Sentry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sentry.h; path = Sources/Sentry/include/Sentry.h; sourceTree = "<group>"; };
+		1D66700CD03E5ABB568EA5D40D5A6623 /* SentryEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryEvent.m; path = Sources/Sentry/SentryEvent.m; sourceTree = "<group>"; };
+		1E103CE693E2CC696FAEC9980CFFC9D5 /* SentryDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryDefines.h; path = Sources/Sentry/include/SentryDefines.h; sourceTree = "<group>"; };
+		1F6B906DE1AF8C8DF49A665C87987D2F /* Pods-ALSLog_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALSLog_Example-dummy.m"; sourceTree = "<group>"; };
+		209BDF772443FBA85E22CE8846E9E07E /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		228C0465AEAF417B8EC704D603779B8F /* SentryBreadcrumbTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryBreadcrumbTracker.h; path = Sources/Sentry/include/SentryBreadcrumbTracker.h; sourceTree = "<group>"; };
+		23EDC79D1839734B60A921486DB39841 /* SentryNSURLRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryNSURLRequest.m; path = Sources/Sentry/SentryNSURLRequest.m; sourceTree = "<group>"; };
+		26193B014EBCCA00C0D4FD60BFEB7556 /* NSDate+Extras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Extras.h"; path = "Sources/Sentry/include/NSDate+Extras.h"; sourceTree = "<group>"; };
+		26D63761B9A6596AB3D01702D6C3A1A3 /* SentryRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryRequestOperation.m; path = Sources/Sentry/SentryRequestOperation.m; sourceTree = "<group>"; };
+		28BD2718EB0E4B4F5901E5C98391C63D /* SentryLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryLog.m; path = Sources/Sentry/SentryLog.m; sourceTree = "<group>"; };
+		29EF2663D204057E85C546FFB1D1B39A /* SentryClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryClient.h; path = Sources/Sentry/include/SentryClient.h; sourceTree = "<group>"; };
+		2B046F4C485AA0A118395807CC6F9EAB /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		2C66FD6C3A695712A1B7BCB0B8522112 /* ALSLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALSLog-prefix.pch"; sourceTree = "<group>"; };
+		2E67D748CDD8FF7F40927C08737A7E67 /* SentryFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryFileManager.h; path = Sources/Sentry/include/SentryFileManager.h; sourceTree = "<group>"; };
+		31B3D9688F6D10CE456402D2CEE65076 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		322D159852E3F8FF6346129D49651358 /* SentryClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryClient.m; path = Sources/Sentry/SentryClient.m; sourceTree = "<group>"; };
+		32EA1404FF3D553CD9E5AF7D0A81F45F /* Pods-ALSLog_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALSLog_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		33CF173D0D5FDE894ED7157BAA783FB5 /* Sentry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sentry-dummy.m"; sourceTree = "<group>"; };
+		357736ABC1216A0DCB6E7D6A7E3B50E5 /* MyCustomFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MyCustomFormatter.m; sourceTree = "<group>"; };
+		3768892701FB79D10B26498C4C60A77B /* ALSLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALSLog.framework; path = ALSLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3882ED5DCB22E72661B44812295D9494 /* SentryDebugMeta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryDebugMeta.h; path = Sources/Sentry/include/SentryDebugMeta.h; sourceTree = "<group>"; };
+		3B2BF7FF058E809EF24418373D070A5B /* SentryStacktrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryStacktrace.h; path = Sources/Sentry/include/SentryStacktrace.h; sourceTree = "<group>"; };
+		3C01ECDF8FD90F68AB66F1007D4BC378 /* SentryAsynchronousOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryAsynchronousOperation.m; path = Sources/Sentry/SentryAsynchronousOperation.m; sourceTree = "<group>"; };
+		3D0615D1B4B4B8ADF7064FA021ABFA94 /* Pods-ALSLog_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALSLog_Tests-dummy.m"; sourceTree = "<group>"; };
+		3D8E496A1C0924D9766E4710F2FE1E6B /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
+		3E3C09E953E84B5CBCB6C686BB20B377 /* SentryError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryError.h; path = Sources/Sentry/include/SentryError.h; sourceTree = "<group>"; };
+		3F84259CBA65B03F1116260FC3A21D5C /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Sentry.framework; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4326FCEFBD3F5D09BD1D5A30AA7AD703 /* SentryException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryException.h; path = Sources/Sentry/include/SentryException.h; sourceTree = "<group>"; };
+		438C9EDBC541A62FD2C35D63E176ECC9 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		4544F14301250EED4BC910A9BB78F993 /* SentryDebugMeta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryDebugMeta.m; path = Sources/Sentry/SentryDebugMeta.m; sourceTree = "<group>"; };
+		4762217FB79FE30E37EAD4689D53FB22 /* Pods-ALSLog_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALSLog_Tests-umbrella.h"; sourceTree = "<group>"; };
+		490AE47B7977286A39CDC9403516D341 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9E29DAAA2E0D8BE6142F6F216B8E08 /* ALSLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALSLog-umbrella.h"; sourceTree = "<group>"; };
+		4D569039CA7C3C220E47E9E9ED2FDD5E /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
+		4E1BE1C894875D1521F51BD8F0C61D85 /* ALSLogConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSLogConfig.h; sourceTree = "<group>"; };
+		4E8346755BCFBB4AA918F8A95B3D8662 /* NSData+Compression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Compression.h"; path = "Sources/Sentry/include/NSData+Compression.h"; sourceTree = "<group>"; };
+		545EAE3E15A89D5CA45A2CA7E291453D /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
+		566596AF16CB4E9A275FE1112B3BBA7F /* Pods-ALSLog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALSLog_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5906A2180C28E7569241FB858DE8FC27 /* Pods-ALSLog_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALSLog_Example-umbrella.h"; sourceTree = "<group>"; };
+		5A0B80B93AAA0F84D83537A03CC18135 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		5A30B495088ADE879BDA105391C1552A /* Pods-ALSLog_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALSLog_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		60B9F22616EE2BA2927F1F43A16D9A3F /* Sentry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sentry.xcconfig; sourceTree = "<group>"; };
+		611400E594DA86C144A784414AAE5898 /* Pods-ALSLog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALSLog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		62CEDB4F1258E00437925E8F04EB9D85 /* SentrySwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySwizzle.h; path = Sources/Sentry/include/SentrySwizzle.h; sourceTree = "<group>"; };
+		63D159AC4B0820DBAAB07BDAC860F2D7 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		6AA7AF4F122A7FD74FC76A6D7A6D5D99 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		6D60056BE55E60C1CF40C3E9E5ECC502 /* SentryKSCrashInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryKSCrashInstallation.h; path = Sources/Sentry/include/SentryKSCrashInstallation.h; sourceTree = "<group>"; };
+		6D8DEFFC03E772787B1B91A01B6C93C4 /* SentryRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryRequestOperation.h; path = Sources/Sentry/include/SentryRequestOperation.h; sourceTree = "<group>"; };
+		6E803B48B35C7303FD6B0A9065F4D6D4 /* Pods-ALSLog_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALSLog_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6EA9237A2543DEB223D515B187B08438 /* Pods-ALSLog_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALSLog_Tests-resources.sh"; sourceTree = "<group>"; };
+		6F0A18153DC206334CCC966D1A7CBA4C /* SentryKSCrashReportConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryKSCrashReportConverter.m; path = Sources/Sentry/SentryKSCrashReportConverter.m; sourceTree = "<group>"; };
+		6FA15C584C476B2B131C3025E854D8BF /* Pods-ALSLog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALSLog_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		70DEEE8929F4E7F543BA3F4C30C9EC6F /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
+		76E0ACA16C49EBB8C2C1116D661D3F43 /* SentryDsn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryDsn.h; path = Sources/Sentry/include/SentryDsn.h; sourceTree = "<group>"; };
+		7C3066F2A91340B5DF4173DAA91ADA10 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
+		7CDDB448492543790548730D4BF09D5C /* SentryBreadcrumbStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryBreadcrumbStore.h; path = Sources/Sentry/include/SentryBreadcrumbStore.h; sourceTree = "<group>"; };
+		80064DBDF42E316E2C5A25D5DFB4409C /* SentryUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryUser.h; path = Sources/Sentry/include/SentryUser.h; sourceTree = "<group>"; };
+		82B221A07E5EB0DF03B65A1EDCB73085 /* Sentry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Sentry.modulemap; sourceTree = "<group>"; };
+		82CF940476F0DB1918CDE14ED2D79FF7 /* Pods-ALSLog_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALSLog_Example-resources.sh"; sourceTree = "<group>"; };
+		841C7903F4B3D9A0C5F099A4808FA7F7 /* SentryContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryContext.h; path = Sources/Sentry/include/SentryContext.h; sourceTree = "<group>"; };
+		889C7E589228B48C55E23432F99C57AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A033BE3FF523959E65E8ABAD7A9403F /* SentrySwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentrySwizzle.m; path = Sources/Sentry/SentrySwizzle.m; sourceTree = "<group>"; };
+		8A77B192F714FEFEC2E91508C8CF4ECC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B58836ACF3085EAB4FF5D7A36F8CC40 /* Pods_ALSLog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ALSLog_Tests.framework; path = "Pods-ALSLog_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C8F30F5021467D03BAB4D71DD7A34E3 /* SentryNSURLRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryNSURLRequest.h; path = Sources/Sentry/include/SentryNSURLRequest.h; sourceTree = "<group>"; };
+		8D6CDA257BE74B0CB62CF17EC2D3E548 /* MyCustomFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MyCustomFormatter.h; sourceTree = "<group>"; };
+		8FEB22DBB8CB9878776D328170AA6D60 /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9188465D3C056EFAE890EB672046B419 /* ALSLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ALSLog.m; sourceTree = "<group>"; };
+		91D7CD539533538DD81E2A05F6C14E9F /* SentryUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryUser.m; path = Sources/Sentry/SentryUser.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94EE51E15B160DD9D8CB7CBA362F5FAC /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		95972ACCF2B315B99A754463B63549E6 /* Sentry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sentry-prefix.pch"; sourceTree = "<group>"; };
+		95DF52AB7EF96F7E1EF3E23AACE63FF1 /* ALSLog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALSLog.xcconfig; sourceTree = "<group>"; };
+		9893014F7F9DBBF3A3CA964CF1ABD19E /* SentryBreadcrumbTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryBreadcrumbTracker.m; path = Sources/Sentry/SentryBreadcrumbTracker.m; sourceTree = "<group>"; };
+		9B62B670AA4A63BDD2CBE48361BA1E60 /* SentryFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryFileManager.m; path = Sources/Sentry/SentryFileManager.m; sourceTree = "<group>"; };
+		9D3F5E7A2483684D8D070F5BA03E4F04 /* SentryThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryThread.m; path = Sources/Sentry/SentryThread.m; sourceTree = "<group>"; };
+		9E0F30FEA029C767E21FDB5F3EE38932 /* SentryThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryThread.h; path = Sources/Sentry/include/SentryThread.h; sourceTree = "<group>"; };
+		A3FC0D5C4B456C938B9C34A392AE651C /* SentryBreadcrumb.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryBreadcrumb.m; path = Sources/Sentry/SentryBreadcrumb.m; sourceTree = "<group>"; };
+		A43CCB8AE5F45FD1B8FB332EDC66C189 /* SentryException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryException.m; path = Sources/Sentry/SentryException.m; sourceTree = "<group>"; };
+		A81DF59FD249F1AEC71FC107EF489EDA /* NSDate+Extras.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Extras.m"; path = "Sources/Sentry/NSDate+Extras.m"; sourceTree = "<group>"; };
+		A903EA16D19EA5F39F06591F2872FCD5 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
+		A9AC517C0A923B1AF87BEC3258FCCCA9 /* SentryStacktrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryStacktrace.m; path = Sources/Sentry/SentryStacktrace.m; sourceTree = "<group>"; };
+		AAB23ED08BAD6C53DD10AD438F886EA6 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		AB06B05878C793C3D9C5BFF589D4F6E4 /* Pods-ALSLog_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ALSLog_Tests.modulemap"; sourceTree = "<group>"; };
+		B04751410EE4252B594C81BFD33FA21B /* SentrySerializable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySerializable.h; path = Sources/Sentry/include/SentrySerializable.h; sourceTree = "<group>"; };
+		B375FAACD744AED7171C5E9A5DA4380C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4949F9BB6003AA6389C307F147E948B /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
+		B5257F968C57E0D126E5D419E5E586E5 /* ALSLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ALSLog.modulemap; sourceTree = "<group>"; };
+		B704350BE65FB1B7FC0AEC84A59F9DFE /* SentryAsynchronousOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryAsynchronousOperation.h; path = Sources/Sentry/include/SentryAsynchronousOperation.h; sourceTree = "<group>"; };
+		B74C4B57C9507D49C83C5A2EACD8B77B /* ALSLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSLog.h; sourceTree = "<group>"; };
+		B7BAED0C747E71B3953F20D0FA4062E5 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
+		BB7F0AB8682AFFBA51BC869568B05CD5 /* SentryCrashExceptionApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryCrashExceptionApplication.m; path = Sources/Sentry/SentryCrashExceptionApplication.m; sourceTree = "<group>"; };
+		BD9D0E644A97D283D14B12C3C15986D7 /* SentryLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryLog.h; path = Sources/Sentry/include/SentryLog.h; sourceTree = "<group>"; };
+		BF7845671C80F3741BB7BBB34B69B7C8 /* SentryClient+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SentryClient+Internal.h"; path = "Sources/Sentry/include/SentryClient+Internal.h"; sourceTree = "<group>"; };
+		C2D614AC8EA45006B57F6438DC892C46 /* ALSLogData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ALSLogData.m; sourceTree = "<group>"; };
+		C38241F9253E408EC45C891586F2FEE2 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
+		C53107071B16F77ADC97B1CFF80451E5 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
+		C6AE122EE3EAAAFAF98AC4A71A7666E6 /* SentryEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryEvent.h; path = Sources/Sentry/include/SentryEvent.h; sourceTree = "<group>"; };
+		C73564239FCD988C577BB0B73D99F0E6 /* SentryQueueableRequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryQueueableRequestManager.h; path = Sources/Sentry/include/SentryQueueableRequestManager.h; sourceTree = "<group>"; };
+		C75BE454DCDC77E687958B6C485C3D5F /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
+		C78B95CA5BB1022C567A002E45AA90B4 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
+		C95EDB8F15931BE2CF7B4DB05742E7DF /* SentryFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryFrame.m; path = Sources/Sentry/SentryFrame.m; sourceTree = "<group>"; };
+		CB80488226D0487DB3B323E7DE575941 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
+		CC48CC28E1BE18FFD9336EF6191427B1 /* SentryKSCrashInstallation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryKSCrashInstallation.m; path = Sources/Sentry/SentryKSCrashInstallation.m; sourceTree = "<group>"; };
+		CDA8A1C682162CE8A2BC21A90E5DE32E /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
+		D1805D1991DC8E71AB61CB0614D5E123 /* SentryFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryFrame.h; path = Sources/Sentry/include/SentryFrame.h; sourceTree = "<group>"; };
+		D4405D2D596C0A887005974A02CF1EED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D730A3335C3BD30703740AEDF91B40F2 /* ALSLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALSLog-dummy.m"; sourceTree = "<group>"; };
+		D9BAD44B75FCE0A3FBA84FFAFAB5BBE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C847DD0B55D472E4F316EABE19B425 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
+		DAC02E3979D1C5C18BE157DA4DC039BE /* Pods_ALSLog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ALSLog_Example.framework; path = "Pods-ALSLog_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3714070059381FF7C4E140C801CC46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DDACF07C5AC475396432684682BA13D0 /* NSDictionary+Sanitize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Sanitize.m"; path = "Sources/Sentry/NSDictionary+Sanitize.m"; sourceTree = "<group>"; };
+		E0B0E3FA7934959A3367A747D12742E2 /* SentryKSCrashReportConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryKSCrashReportConverter.h; path = Sources/Sentry/include/SentryKSCrashReportConverter.h; sourceTree = "<group>"; };
+		E21E4D0C1D70EB704C1B14747AB1F2FB /* SentryDsn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryDsn.m; path = Sources/Sentry/SentryDsn.m; sourceTree = "<group>"; };
+		E36175FFB3A4C44662E269CE5051338C /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		E419FA93934F29B1EAB49C65E3C847DA /* Pods-ALSLog_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALSLog_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4E4BBA127C7FE7454678625D7AA88ED /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74B8DA80581C1041AE8556F35135225 /* SentryKSCrashReportSink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryKSCrashReportSink.m; path = Sources/Sentry/SentryKSCrashReportSink.m; sourceTree = "<group>"; };
+		E90AB1861B3628FABD2EDFEE0ED18D18 /* Pods-ALSLog_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ALSLog_Example.modulemap"; sourceTree = "<group>"; };
+		E98FD079FDDFCCA05D9B5EA74A572682 /* ALSLogData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSLogData.h; sourceTree = "<group>"; };
+		EA81425607168124C494C76895A1EC95 /* Pods-ALSLog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALSLog_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F1FA6A02D74E4D6575FA03533BDEB19A /* Pods-ALSLog_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALSLog_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F9212A5411829633641C34A3398A1482 /* SentryBreadcrumb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryBreadcrumb.h; path = Sources/Sentry/include/SentryBreadcrumb.h; sourceTree = "<group>"; };
+		FA796363A65D05AA356C5B2DECB514E2 /* SentryBreadcrumbStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryBreadcrumbStore.m; path = Sources/Sentry/SentryBreadcrumbStore.m; sourceTree = "<group>"; };
+		FC78A64A793AFF14792015B295E35B64 /* SentryCrashExceptionApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashExceptionApplication.h; path = Sources/Sentry/include/SentryCrashExceptionApplication.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		444581E801E80F9BA21A28A706B63173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CD9E4FB1ED2FDE6562621EEB86895E /* CocoaLumberjack.framework in Frameworks */,
+				1CE454DDAEF2389A6B65C18876B79B61 /* Foundation.framework in Frameworks */,
+				640CCBFE81EB874A6B2659BAB476A224 /* Sentry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		452FC707D7F0CF1D263D3B1F772BA11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD2DA251A7CBF9D630294EF669EB0BAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B644BD313994992CD277A693309F0A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB431DD5379178F9AF60C4F51BF61EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF3156F6DD34610801F64477C740E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D0D06BC9E98B060F9A773950E6FD0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5355B851440BF7BC125AF5E9C326896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670FB83681E9B74D7BF1B67AF2A3F367 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A6AE0E15C160251C66860AF35006693 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D39A6545C39E3657033624FAF2F0D934 /* CocoaLumberjack */,
+				63B6A21AECE6B89C6EB31227628B4714 /* Sentry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2B47EA58EB0E8B46A850FDEFB65DAF60 /* Pods-ALSLog_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8A77B192F714FEFEC2E91508C8CF4ECC /* Info.plist */,
+				AB06B05878C793C3D9C5BFF589D4F6E4 /* Pods-ALSLog_Tests.modulemap */,
+				32EA1404FF3D553CD9E5AF7D0A81F45F /* Pods-ALSLog_Tests-acknowledgements.markdown */,
+				E419FA93934F29B1EAB49C65E3C847DA /* Pods-ALSLog_Tests-acknowledgements.plist */,
+				3D0615D1B4B4B8ADF7064FA021ABFA94 /* Pods-ALSLog_Tests-dummy.m */,
+				5A30B495088ADE879BDA105391C1552A /* Pods-ALSLog_Tests-frameworks.sh */,
+				6EA9237A2543DEB223D515B187B08438 /* Pods-ALSLog_Tests-resources.sh */,
+				4762217FB79FE30E37EAD4689D53FB22 /* Pods-ALSLog_Tests-umbrella.h */,
+				611400E594DA86C144A784414AAE5898 /* Pods-ALSLog_Tests.debug.xcconfig */,
+				566596AF16CB4E9A275FE1112B3BBA7F /* Pods-ALSLog_Tests.release.xcconfig */,
+			);
+			name = "Pods-ALSLog_Tests";
+			path = "Target Support Files/Pods-ALSLog_Tests";
+			sourceTree = "<group>";
+		};
+		3E833540B876820DDEFD79A1DDA64999 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5257F968C57E0D126E5D419E5E586E5 /* ALSLog.modulemap */,
+				95DF52AB7EF96F7E1EF3E23AACE63FF1 /* ALSLog.xcconfig */,
+				D730A3335C3BD30703740AEDF91B40F2 /* ALSLog-dummy.m */,
+				2C66FD6C3A695712A1B7BCB0B8522112 /* ALSLog-prefix.pch */,
+				4B9E29DAAA2E0D8BE6142F6F216B8E08 /* ALSLog-umbrella.h */,
+				D4405D2D596C0A887005974A02CF1EED /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ALSLog";
+			sourceTree = "<group>";
+		};
+		424EE568BB94A88F2530B4EBE6867B64 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B74C4B57C9507D49C83C5A2EACD8B77B /* ALSLog.h */,
+				9188465D3C056EFAE890EB672046B419 /* ALSLog.m */,
+				4E1BE1C894875D1521F51BD8F0C61D85 /* ALSLogConfig.h */,
+				0A7B348CF26F93123D5C2AE642A9EDCB /* ALSLogConfig.m */,
+				E98FD079FDDFCCA05D9B5EA74A572682 /* ALSLogData.h */,
+				C2D614AC8EA45006B57F6438DC892C46 /* ALSLogData.m */,
+				1AC899CD8589B246890CB1EC4F8AF8CA /* Info.plist */,
+				8D6CDA257BE74B0CB62CF17EC2D3E548 /* MyCustomFormatter.h */,
+				357736ABC1216A0DCB6E7D6A7E3B50E5 /* MyCustomFormatter.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		63B6A21AECE6B89C6EB31227628B4714 /* Sentry */ = {
+			isa = PBXGroup;
+			children = (
+				778890B08B513631666DE36410D3FD6B /* Core */,
+				7480DE300AB2306764767C33B2B81164 /* Support Files */,
+			);
+			name = Sentry;
+			path = Sentry;
+			sourceTree = "<group>";
+		};
+		7004289B33F329D38B6AA098B8A1FFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				490AE47B7977286A39CDC9403516D341 /* CocoaLumberjack.framework */,
+				8FEB22DBB8CB9878776D328170AA6D60 /* Sentry.framework */,
+				8F38DD807EA9418564A0082E7EE6182D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		738919E4E3E102AE97907C6B149F9400 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				3D8E496A1C0924D9766E4710F2FE1E6B /* CocoaLumberjack.h */,
+				18398E57B80C31868393D68CC4FD89D2 /* DDAbstractDatabaseLogger.h */,
+				438C9EDBC541A62FD2C35D63E176ECC9 /* DDAbstractDatabaseLogger.m */,
+				D9C847DD0B55D472E4F316EABE19B425 /* DDASLLogCapture.h */,
+				C38241F9253E408EC45C891586F2FEE2 /* DDASLLogCapture.m */,
+				209BDF772443FBA85E22CE8846E9E07E /* DDASLLogger.h */,
+				B7BAED0C747E71B3953F20D0FA4062E5 /* DDASLLogger.m */,
+				CB80488226D0487DB3B323E7DE575941 /* DDAssertMacros.h */,
+				70DEEE8929F4E7F543BA3F4C30C9EC6F /* DDFileLogger.h */,
+				C75BE454DCDC77E687958B6C485C3D5F /* DDFileLogger.m */,
+				AAB23ED08BAD6C53DD10AD438F886EA6 /* DDLegacyMacros.h */,
+				C53107071B16F77ADC97B1CFF80451E5 /* DDLog.h */,
+				7C3066F2A91340B5DF4173DAA91ADA10 /* DDLog.m */,
+				5A0B80B93AAA0F84D83537A03CC18135 /* DDLog+LOGV.h */,
+				4D569039CA7C3C220E47E9E9ED2FDD5E /* DDLogMacros.h */,
+				B4949F9BB6003AA6389C307F147E948B /* DDOSLogger.h */,
+				A903EA16D19EA5F39F06591F2872FCD5 /* DDOSLogger.m */,
+				15B09A5ABB9E95F3DB408078A5B1679B /* DDTTYLogger.h */,
+				C78B95CA5BB1022C567A002E45AA90B4 /* DDTTYLogger.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		7480DE300AB2306764767C33B2B81164 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				889C7E589228B48C55E23432F99C57AD /* Info.plist */,
+				82B221A07E5EB0DF03B65A1EDCB73085 /* Sentry.modulemap */,
+				60B9F22616EE2BA2927F1F43A16D9A3F /* Sentry.xcconfig */,
+				33CF173D0D5FDE894ED7157BAA783FB5 /* Sentry-dummy.m */,
+				95972ACCF2B315B99A754463B63549E6 /* Sentry-prefix.pch */,
+				03255D9C81A558F07030FD1EEEEC67F9 /* Sentry-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Sentry";
+			sourceTree = "<group>";
+		};
+		778890B08B513631666DE36410D3FD6B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4E8346755BCFBB4AA918F8A95B3D8662 /* NSData+Compression.h */,
+				107F0B0542F09B32033B0C123F5A25A5 /* NSData+Compression.m */,
+				26193B014EBCCA00C0D4FD60BFEB7556 /* NSDate+Extras.h */,
+				A81DF59FD249F1AEC71FC107EF489EDA /* NSDate+Extras.m */,
+				1B2F87C990C0C3582D76C28F064C80F1 /* NSDictionary+Sanitize.h */,
+				DDACF07C5AC475396432684682BA13D0 /* NSDictionary+Sanitize.m */,
+				1CDD646A6369A853941D22E0BD9A928C /* Sentry.h */,
+				B704350BE65FB1B7FC0AEC84A59F9DFE /* SentryAsynchronousOperation.h */,
+				3C01ECDF8FD90F68AB66F1007D4BC378 /* SentryAsynchronousOperation.m */,
+				F9212A5411829633641C34A3398A1482 /* SentryBreadcrumb.h */,
+				A3FC0D5C4B456C938B9C34A392AE651C /* SentryBreadcrumb.m */,
+				7CDDB448492543790548730D4BF09D5C /* SentryBreadcrumbStore.h */,
+				FA796363A65D05AA356C5B2DECB514E2 /* SentryBreadcrumbStore.m */,
+				228C0465AEAF417B8EC704D603779B8F /* SentryBreadcrumbTracker.h */,
+				9893014F7F9DBBF3A3CA964CF1ABD19E /* SentryBreadcrumbTracker.m */,
+				29EF2663D204057E85C546FFB1D1B39A /* SentryClient.h */,
+				322D159852E3F8FF6346129D49651358 /* SentryClient.m */,
+				BF7845671C80F3741BB7BBB34B69B7C8 /* SentryClient+Internal.h */,
+				841C7903F4B3D9A0C5F099A4808FA7F7 /* SentryContext.h */,
+				02CCAA3020915A766E600F7C8A42E294 /* SentryContext.m */,
+				FC78A64A793AFF14792015B295E35B64 /* SentryCrashExceptionApplication.h */,
+				BB7F0AB8682AFFBA51BC869568B05CD5 /* SentryCrashExceptionApplication.m */,
+				3882ED5DCB22E72661B44812295D9494 /* SentryDebugMeta.h */,
+				4544F14301250EED4BC910A9BB78F993 /* SentryDebugMeta.m */,
+				1E103CE693E2CC696FAEC9980CFFC9D5 /* SentryDefines.h */,
+				76E0ACA16C49EBB8C2C1116D661D3F43 /* SentryDsn.h */,
+				E21E4D0C1D70EB704C1B14747AB1F2FB /* SentryDsn.m */,
+				3E3C09E953E84B5CBCB6C686BB20B377 /* SentryError.h */,
+				04F5C2DA16BD871BCED05F8C586A9C38 /* SentryError.m */,
+				C6AE122EE3EAAAFAF98AC4A71A7666E6 /* SentryEvent.h */,
+				1D66700CD03E5ABB568EA5D40D5A6623 /* SentryEvent.m */,
+				4326FCEFBD3F5D09BD1D5A30AA7AD703 /* SentryException.h */,
+				A43CCB8AE5F45FD1B8FB332EDC66C189 /* SentryException.m */,
+				2E67D748CDD8FF7F40927C08737A7E67 /* SentryFileManager.h */,
+				9B62B670AA4A63BDD2CBE48361BA1E60 /* SentryFileManager.m */,
+				D1805D1991DC8E71AB61CB0614D5E123 /* SentryFrame.h */,
+				C95EDB8F15931BE2CF7B4DB05742E7DF /* SentryFrame.m */,
+				6D60056BE55E60C1CF40C3E9E5ECC502 /* SentryKSCrashInstallation.h */,
+				CC48CC28E1BE18FFD9336EF6191427B1 /* SentryKSCrashInstallation.m */,
+				E0B0E3FA7934959A3367A747D12742E2 /* SentryKSCrashReportConverter.h */,
+				6F0A18153DC206334CCC966D1A7CBA4C /* SentryKSCrashReportConverter.m */,
+				07E957BE6280CDBFB771D1AD0029367B /* SentryKSCrashReportSink.h */,
+				E74B8DA80581C1041AE8556F35135225 /* SentryKSCrashReportSink.m */,
+				BD9D0E644A97D283D14B12C3C15986D7 /* SentryLog.h */,
+				28BD2718EB0E4B4F5901E5C98391C63D /* SentryLog.m */,
+				8C8F30F5021467D03BAB4D71DD7A34E3 /* SentryNSURLRequest.h */,
+				23EDC79D1839734B60A921486DB39841 /* SentryNSURLRequest.m */,
+				C73564239FCD988C577BB0B73D99F0E6 /* SentryQueueableRequestManager.h */,
+				1AB95E2A9979B1A8974AB642BCC2563D /* SentryQueueableRequestManager.m */,
+				6D8DEFFC03E772787B1B91A01B6C93C4 /* SentryRequestOperation.h */,
+				26D63761B9A6596AB3D01702D6C3A1A3 /* SentryRequestOperation.m */,
+				B04751410EE4252B594C81BFD33FA21B /* SentrySerializable.h */,
+				3B2BF7FF058E809EF24418373D070A5B /* SentryStacktrace.h */,
+				A9AC517C0A923B1AF87BEC3258FCCCA9 /* SentryStacktrace.m */,
+				62CEDB4F1258E00437925E8F04EB9D85 /* SentrySwizzle.h */,
+				8A033BE3FF523959E65E8ABAD7A9403F /* SentrySwizzle.m */,
+				9E0F30FEA029C767E21FDB5F3EE38932 /* SentryThread.h */,
+				9D3F5E7A2483684D8D070F5BA03E4F04 /* SentryThread.m */,
+				80064DBDF42E316E2C5A25D5DFB4409C /* SentryUser.h */,
+				91D7CD539533538DD81E2A05F6C14E9F /* SentryUser.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				ECCD298A2B0031D065D2EEEF55ADF88E /* Development Pods */,
+				7004289B33F329D38B6AA098B8A1FFE8 /* Frameworks */,
+				1A6AE0E15C160251C66860AF35006693 /* Pods */,
+				FF373986D358CB7659B0BCE890E25FDD /* Products */,
+				A9EB6C8BF5132EA56D6F2CCC4C4C17A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F38DD807EA9418564A0082E7EE6182D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DC3714070059381FF7C4E140C801CC46 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A7DD60094E4AF2CAAABEB33113A22980 /* ALSLog */ = {
+			isa = PBXGroup;
+			children = (
+				424EE568BB94A88F2530B4EBE6867B64 /* Classes */,
+			);
+			name = ALSLog;
+			path = ALSLog;
+			sourceTree = "<group>";
+		};
+		A9EB6C8BF5132EA56D6F2CCC4C4C17A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA0BE2EAA5E84E41E2F555AAB96AE167 /* Pods-ALSLog_Example */,
+				2B47EA58EB0E8B46A850FDEFB65DAF60 /* Pods-ALSLog_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AA0BE2EAA5E84E41E2F555AAB96AE167 /* Pods-ALSLog_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B375FAACD744AED7171C5E9A5DA4380C /* Info.plist */,
+				E90AB1861B3628FABD2EDFEE0ED18D18 /* Pods-ALSLog_Example.modulemap */,
+				02852887DD1F5B025D439CD23BD843B5 /* Pods-ALSLog_Example-acknowledgements.markdown */,
+				6E803B48B35C7303FD6B0A9065F4D6D4 /* Pods-ALSLog_Example-acknowledgements.plist */,
+				1F6B906DE1AF8C8DF49A665C87987D2F /* Pods-ALSLog_Example-dummy.m */,
+				F1FA6A02D74E4D6575FA03533BDEB19A /* Pods-ALSLog_Example-frameworks.sh */,
+				82CF940476F0DB1918CDE14ED2D79FF7 /* Pods-ALSLog_Example-resources.sh */,
+				5906A2180C28E7569241FB858DE8FC27 /* Pods-ALSLog_Example-umbrella.h */,
+				6FA15C584C476B2B131C3025E854D8BF /* Pods-ALSLog_Example.debug.xcconfig */,
+				EA81425607168124C494C76895A1EC95 /* Pods-ALSLog_Example.release.xcconfig */,
+			);
+			name = "Pods-ALSLog_Example";
+			path = "Target Support Files/Pods-ALSLog_Example";
+			sourceTree = "<group>";
+		};
+		C442A587C0D97997627DCBA175F09E9F /* ALSLog */ = {
+			isa = PBXGroup;
+			children = (
+				A7DD60094E4AF2CAAABEB33113A22980 /* ALSLog */,
+				3E833540B876820DDEFD79A1DDA64999 /* Support Files */,
+			);
+			name = ALSLog;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C6AFA941F10297F3539BCE7E68285C36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BA2DAE8F7BEB48D9FBF29BDE79AF5F4 /* CocoaLumberjack.modulemap */,
+				15E73FFE570BDD7653AA5AF3886F0E16 /* CocoaLumberjack.xcconfig */,
+				545EAE3E15A89D5CA45A2CA7E291453D /* CocoaLumberjack-dummy.m */,
+				2B046F4C485AA0A118395807CC6F9EAB /* CocoaLumberjack-prefix.pch */,
+				CDA8A1C682162CE8A2BC21A90E5DE32E /* CocoaLumberjack-umbrella.h */,
+				D9BAD44B75FCE0A3FBA84FFAFAB5BBE6 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaLumberjack";
+			sourceTree = "<group>";
+		};
+		C715D440D971C216D090B53FFFC39E31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				075EB0F1C4D28D5D32530992FBC91A00 /* DDContextFilterLogFormatter.h */,
+				63D159AC4B0820DBAAB07BDAC860F2D7 /* DDContextFilterLogFormatter.m */,
+				E36175FFB3A4C44662E269CE5051338C /* DDDispatchQueueLogFormatter.h */,
+				6AA7AF4F122A7FD74FC76A6D7A6D5D99 /* DDDispatchQueueLogFormatter.m */,
+				94EE51E15B160DD9D8CB7CBA362F5FAC /* DDMultiFormatter.h */,
+				31B3D9688F6D10CE456402D2CEE65076 /* DDMultiFormatter.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D39A6545C39E3657033624FAF2F0D934 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				738919E4E3E102AE97907C6B149F9400 /* Default */,
+				C715D440D971C216D090B53FFFC39E31 /* Extensions */,
+				C6AFA941F10297F3539BCE7E68285C36 /* Support Files */,
+			);
+			name = CocoaLumberjack;
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		ECCD298A2B0031D065D2EEEF55ADF88E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C442A587C0D97997627DCBA175F09E9F /* ALSLog */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FF373986D358CB7659B0BCE890E25FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3768892701FB79D10B26498C4C60A77B /* ALSLog.framework */,
+				E4E4BBA127C7FE7454678625D7AA88ED /* CocoaLumberjack.framework */,
+				DAC02E3979D1C5C18BE157DA4DC039BE /* Pods_ALSLog_Example.framework */,
+				8B58836ACF3085EAB4FF5D7A36F8CC40 /* Pods_ALSLog_Tests.framework */,
+				3F84259CBA65B03F1116260FC3A21D5C /* Sentry.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1852E57B8A2EA679941C350E3ED3984F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2994A1BF838DADBD32D8C784B86C82B0 /* NSData+Compression.h in Headers */,
+				EFCF2321D32B640212641C6E772822FA /* NSDate+Extras.h in Headers */,
+				23FC7D32C14C0810D9D5335EFFC23F3C /* NSDictionary+Sanitize.h in Headers */,
+				DF1AC8D1E93DF7B791E9CCE311346DA0 /* Sentry-umbrella.h in Headers */,
+				526B0AE766076AF7715F74DE3FE5BFEA /* Sentry.h in Headers */,
+				1C5AB7D426D57A38E0C73F3E594AA347 /* SentryAsynchronousOperation.h in Headers */,
+				A5948FAAB52FCA9706501060A9E7D6DB /* SentryBreadcrumb.h in Headers */,
+				DE330936F976825EAD076AA2FE8C76C2 /* SentryBreadcrumbStore.h in Headers */,
+				3D9F6EC7C34A8D0573B70489FC3B1F47 /* SentryBreadcrumbTracker.h in Headers */,
+				45F016DA3335BA21F3F7835ADE535B6E /* SentryClient+Internal.h in Headers */,
+				D964D06D7921F4BD32B69DB9C38EEA24 /* SentryClient.h in Headers */,
+				9CECF0AF69750EC4CE7879FF4EE1135C /* SentryContext.h in Headers */,
+				DB7D1DF9E469B47B05DC0767D3D843A1 /* SentryCrashExceptionApplication.h in Headers */,
+				71808B49B4F3271122CCEECFACA5E7BA /* SentryDebugMeta.h in Headers */,
+				78F6EE56FC6BD03C86B653B2427F1167 /* SentryDefines.h in Headers */,
+				3124E2A85749821FEBAAAC40772ACE24 /* SentryDsn.h in Headers */,
+				CF23256C0D8CD978064836B5183D9DA5 /* SentryError.h in Headers */,
+				20F82255D660337C6FD3D90B7F709202 /* SentryEvent.h in Headers */,
+				030C0EC7163B4626BBDB27BCE8C03356 /* SentryException.h in Headers */,
+				B3E1E8C66D9D691355CB01A6A082E45D /* SentryFileManager.h in Headers */,
+				2D3740F37A9CE88C0119CB68332A023D /* SentryFrame.h in Headers */,
+				F616FB01AD981E19FBEDFEA0C7161D02 /* SentryKSCrashInstallation.h in Headers */,
+				B543824C23F3DE225EFF57F9A9897B3D /* SentryKSCrashReportConverter.h in Headers */,
+				0961A7C82A452A5FF24073905FC5C364 /* SentryKSCrashReportSink.h in Headers */,
+				D014EC4C14696B41EFD3B8047FD963D2 /* SentryLog.h in Headers */,
+				9279EF5620E865714E664505EB010C08 /* SentryNSURLRequest.h in Headers */,
+				524AD4CFFF04ABB50536F2DDD3622A4C /* SentryQueueableRequestManager.h in Headers */,
+				86A0BF2F3B4E2064C8F541899055D40E /* SentryRequestOperation.h in Headers */,
+				2B1BF9479F5AA429DFF4F1136CE7927D /* SentrySerializable.h in Headers */,
+				5A8AF322F775AC5B7B22D52006C86F84 /* SentryStacktrace.h in Headers */,
+				8AD51DEE0D3B83D420FB948612AC96DD /* SentrySwizzle.h in Headers */,
+				09B1C1FE967B65A418A661A15FC67D7B /* SentryThread.h in Headers */,
+				AC8019CF8CE3E279C3ACC4BA76A6E9CE /* SentryUser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6243BD40D01E7FBD6F30086E773E96F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47ED8E22C3994632D5B7278310F1559 /* Pods-ALSLog_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73A20303EFEFED3385E9C953C9E393E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89FC21C084C3A6E89C62B3A0BA96E5C3 /* CocoaLumberjack-umbrella.h in Headers */,
+				26AB5B3C48CD719CB360C3DEAE154E1A /* CocoaLumberjack.h in Headers */,
+				5C1FAE0281FB1CDE132DD58D4700CDD9 /* DDAbstractDatabaseLogger.h in Headers */,
+				5F4D6EBB37E3ACB8233267B5A582E78A /* DDASLLogCapture.h in Headers */,
+				3158F4CE933E9E2EB1209A9536D5A958 /* DDASLLogger.h in Headers */,
+				4F9B518F1F575445C5639513C9DCEA0F /* DDAssertMacros.h in Headers */,
+				55DE26E72A9AB055A895926C06CA5AFF /* DDContextFilterLogFormatter.h in Headers */,
+				4DE6B77902B31CBF54EB749AC5F2199A /* DDDispatchQueueLogFormatter.h in Headers */,
+				5FF6EFC98CEDB5005688A5842DEA1540 /* DDFileLogger.h in Headers */,
+				DF0488A5AB9C06F6226776C9684E3BD7 /* DDLegacyMacros.h in Headers */,
+				C6962672521DDB34A42134F136BC8D7E /* DDLog+LOGV.h in Headers */,
+				34B3403443A2818F10ED6BF8F333AD4B /* DDLog.h in Headers */,
+				6DD3030CEE13D043BBC4622F5D7F0F6E /* DDLogMacros.h in Headers */,
+				1188E30755327B6EDF19D678A725173D /* DDMultiFormatter.h in Headers */,
+				36FDDACA09A913F8C396482EC4B31A9F /* DDOSLogger.h in Headers */,
+				0F501609DA7D9F2D53EB6942913F8D7D /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DF76AB86A9EAB859A3D2A7DB25A220 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B5C115E9BF9B0FA39DC9E55A53E93FC /* ALSLog-umbrella.h in Headers */,
+				16D870B4A65F167B89EFFA6315567FAD /* ALSLog.h in Headers */,
+				AF0E68CBC90BCB2298D4D6F44E638DDA /* ALSLogConfig.h in Headers */,
+				E89F5FC33CBCC80E99F402C2B4EAE4DB /* ALSLogData.h in Headers */,
+				3EF74497C660F18E3BD674AF4A29B1BD /* MyCustomFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C916472E5F586F26D5A9E463CF23A002 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC074611933E555A06EDD094FFC17A5 /* Pods-ALSLog_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0CF5117C60D675E4B0955727BA2ADD6C /* CocoaLumberjack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6576B611A607FFFF9D4B2378AF7D412 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */;
+			buildPhases = (
+				6B6064DE4DEB5DBA7B0949D90D6A4EBA /* Sources */,
+				E5355B851440BF7BC125AF5E9C326896 /* Frameworks */,
+				73A20303EFEFED3385E9C953C9E393E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaLumberjack;
+			productName = CocoaLumberjack;
+			productReference = E4E4BBA127C7FE7454678625D7AA88ED /* CocoaLumberjack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1CBB7640AF29517DB93E4550FD7E7C71 /* Pods-ALSLog_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D2AB5030F12D879390DEEE8B082BFF /* Build configuration list for PBXNativeTarget "Pods-ALSLog_Example" */;
+			buildPhases = (
+				E07F0F9DC9C7AD0FD569E8FB042A261E /* Sources */,
+				B644BD313994992CD277A693309F0A7D /* Frameworks */,
+				6243BD40D01E7FBD6F30086E773E96F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				101CD5C529CC3FB2DDD42082502FA7FC /* PBXTargetDependency */,
+				FE9F2A88616B19FAE71A8A6FDB3A119D /* PBXTargetDependency */,
+				5A66A6DD8EA844835C6B3B0C8089195D /* PBXTargetDependency */,
+			);
+			name = "Pods-ALSLog_Example";
+			productName = "Pods-ALSLog_Example";
+			productReference = DAC02E3979D1C5C18BE157DA4DC039BE /* Pods_ALSLog_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6CB4C7803FB5F433C04F0619AC860566 /* Pods-ALSLog_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470A522F2A0C9172DF18EE493F8ADEF4 /* Build configuration list for PBXNativeTarget "Pods-ALSLog_Tests" */;
+			buildPhases = (
+				C13B26F4288E1CD16FF98010EC67D851 /* Sources */,
+				452FC707D7F0CF1D263D3B1F772BA11A /* Frameworks */,
+				C916472E5F586F26D5A9E463CF23A002 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ALSLog_Tests";
+			productName = "Pods-ALSLog_Tests";
+			productReference = 8B58836ACF3085EAB4FF5D7A36F8CC40 /* Pods_ALSLog_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1F83CB98A0E67BB6F1495CAEF493FA6 /* ALSLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85264FAA9BF703EF39A154B4939A8CB9 /* Build configuration list for PBXNativeTarget "ALSLog" */;
+			buildPhases = (
+				767220EC10A3E0CC0D759641EBACEB0C /* Sources */,
+				444581E801E80F9BA21A28A706B63173 /* Frameworks */,
+				C3DF76AB86A9EAB859A3D2A7DB25A220 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				355E306ED2FE0653B656A44A922AE684 /* PBXTargetDependency */,
+				5F7A26D3A875B15335CA481FB6690769 /* PBXTargetDependency */,
+			);
+			name = ALSLog;
+			productName = ALSLog;
+			productReference = 3768892701FB79D10B26498C4C60A77B /* ALSLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E77C8B4325325734477C2C173AAF7BB3 /* Sentry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FF166D060905D2CBF0C9F55C0AAD280 /* Build configuration list for PBXNativeTarget "Sentry" */;
+			buildPhases = (
+				DEA7606C2E95C9E0B9C5FA9335D29E08 /* Sources */,
+				DAF3156F6DD34610801F64477C740E21 /* Frameworks */,
+				1852E57B8A2EA679941C350E3ED3984F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sentry;
+			productName = Sentry;
+			productReference = 3F84259CBA65B03F1116260FC3A21D5C /* Sentry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FF373986D358CB7659B0BCE890E25FDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1F83CB98A0E67BB6F1495CAEF493FA6 /* ALSLog */,
+				0CF5117C60D675E4B0955727BA2ADD6C /* CocoaLumberjack */,
+				1CBB7640AF29517DB93E4550FD7E7C71 /* Pods-ALSLog_Example */,
+				6CB4C7803FB5F433C04F0619AC860566 /* Pods-ALSLog_Tests */,
+				E77C8B4325325734477C2C173AAF7BB3 /* Sentry */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B6064DE4DEB5DBA7B0949D90D6A4EBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C603BD4131E3EA727D034ECBCE16CE5A /* CocoaLumberjack-dummy.m in Sources */,
+				861B7E6BFA7CDF02B12F6CCA0931C1C4 /* DDAbstractDatabaseLogger.m in Sources */,
+				689CD0566B4C6C5A4D6A2B45C0167D32 /* DDASLLogCapture.m in Sources */,
+				3B773099158176D5288E9C3659F917DB /* DDASLLogger.m in Sources */,
+				A9AF82F2B1FFD646A8BDAC4B69775852 /* DDContextFilterLogFormatter.m in Sources */,
+				CEA87C414C218CA3A6C89F33132CBE57 /* DDDispatchQueueLogFormatter.m in Sources */,
+				3716E2F6FDA3CDEEBC4B7A2AFBD116D3 /* DDFileLogger.m in Sources */,
+				E21B652356AEE60D33573F51C379989F /* DDLog.m in Sources */,
+				4696A1AA93A39BEB1C773038405A1625 /* DDMultiFormatter.m in Sources */,
+				345A2ADBF2C86D333F0244C1E95AED07 /* DDOSLogger.m in Sources */,
+				04DBD4829C9F784D14B3578DD7F130AF /* DDTTYLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767220EC10A3E0CC0D759641EBACEB0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7EEE0FC5057C37137D42820CFEBE12 /* ALSLog-dummy.m in Sources */,
+				E1FD02B1DD227068850DFA93B1F2FDD1 /* ALSLog.m in Sources */,
+				9FA9EBF9AEFBFAB9CF4AC61F2FCC0368 /* ALSLogConfig.m in Sources */,
+				760E67EE7353C4C90C393182DFA8EA9F /* ALSLogData.m in Sources */,
+				C66D0A15197E7DB897BE282D21E81EAB /* Info.plist in Sources */,
+				423F887005BC095A16CB6E17880E7C07 /* MyCustomFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C13B26F4288E1CD16FF98010EC67D851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F93F029E06861EA862104E19CCBAEB /* Pods-ALSLog_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA7606C2E95C9E0B9C5FA9335D29E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97155A6A70A2371A3437B6C96DF70766 /* NSData+Compression.m in Sources */,
+				4B53DBCB92F9930F79C5B68ABF28BB7F /* NSDate+Extras.m in Sources */,
+				19389A2F5F11E43A85DD8A51C3643881 /* NSDictionary+Sanitize.m in Sources */,
+				FB8111F98FC21C1AD8265DBA4E0C6A23 /* Sentry-dummy.m in Sources */,
+				A307AD12DA27419D33AAE4046E4E05F1 /* SentryAsynchronousOperation.m in Sources */,
+				6B1445C28E77A4B4CF577F2BAEC36122 /* SentryBreadcrumb.m in Sources */,
+				4C0F3CDDDBB8BFCB24F66B6E691FE83A /* SentryBreadcrumbStore.m in Sources */,
+				F0A8EF93E8942F34C1D5E854218C0E7E /* SentryBreadcrumbTracker.m in Sources */,
+				0522EDDCD3C7DCFCEF889C7FB85FE156 /* SentryClient.m in Sources */,
+				07D84AF451C47685D64F89F9C23F50AD /* SentryContext.m in Sources */,
+				C11FD0640A1B9E535A21FCFEA0C22D0D /* SentryCrashExceptionApplication.m in Sources */,
+				AE995E7546B2E5C4C04303D44BC8DEDE /* SentryDebugMeta.m in Sources */,
+				E0146C2643C5D4FDCE362A93166BA530 /* SentryDsn.m in Sources */,
+				95179F9C4B14DDFB747E741415F39F11 /* SentryError.m in Sources */,
+				B156088B816068570E5E6A13BC9AF271 /* SentryEvent.m in Sources */,
+				2282ABA55AA49E40F5B15F423B725297 /* SentryException.m in Sources */,
+				E20FDCD323DD60ACA8B63EA01A61C56F /* SentryFileManager.m in Sources */,
+				629161355F137A7CA272DDB9B646A925 /* SentryFrame.m in Sources */,
+				9439A64C5CF5479D6483EEA7E16EC621 /* SentryKSCrashInstallation.m in Sources */,
+				EB4E81D646377BAC1921FCA0D7A083B4 /* SentryKSCrashReportConverter.m in Sources */,
+				B30C9FE7D1466713C7FC04A7014556E8 /* SentryKSCrashReportSink.m in Sources */,
+				69264941FAAB50BCE4DBF9C8AE52DB4F /* SentryLog.m in Sources */,
+				63DD2FD657CB7CF708B5D961574236AB /* SentryNSURLRequest.m in Sources */,
+				023E606B8E4956B248B6737221453F63 /* SentryQueueableRequestManager.m in Sources */,
+				D443A86A133F1FA345C6E800BB57EDE0 /* SentryRequestOperation.m in Sources */,
+				0D13A73E9339A15929E79649992549A8 /* SentryStacktrace.m in Sources */,
+				7BACFEEEAD89D380165A37F0E9155BAF /* SentrySwizzle.m in Sources */,
+				36897519F984D94D0829187CE893554B /* SentryThread.m in Sources */,
+				1CBAEBF9B9346D4518CC35658105EB9D /* SentryUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07F0F9DC9C7AD0FD569E8FB042A261E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13B09AEC3A43D27AC8F88A042831D1E /* Pods-ALSLog_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		101CD5C529CC3FB2DDD42082502FA7FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALSLog;
+			target = E1F83CB98A0E67BB6F1495CAEF493FA6 /* ALSLog */;
+			targetProxy = F729EC952DA2810F074ECD221BCA94F0 /* PBXContainerItemProxy */;
+		};
+		355E306ED2FE0653B656A44A922AE684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = 0CF5117C60D675E4B0955727BA2ADD6C /* CocoaLumberjack */;
+			targetProxy = 04DBC6CA3F26D28F87E551BC4E01746B /* PBXContainerItemProxy */;
+		};
+		5A66A6DD8EA844835C6B3B0C8089195D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sentry;
+			target = E77C8B4325325734477C2C173AAF7BB3 /* Sentry */;
+			targetProxy = B5C8C677CE76EC318FC214F93AD113DA /* PBXContainerItemProxy */;
+		};
+		5F7A26D3A875B15335CA481FB6690769 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sentry;
+			target = E77C8B4325325734477C2C173AAF7BB3 /* Sentry */;
+			targetProxy = 5E133C121A4AAFA6AA1279B5B330F4C2 /* PBXContainerItemProxy */;
+		};
+		FE9F2A88616B19FAE71A8A6FDB3A119D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = 0CF5117C60D675E4B0955727BA2ADD6C /* CocoaLumberjack */;
+			targetProxy = CAA04FF24288347F2840F4C09321EDC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		40620C97B78EFA7E3BB721CF26DD74C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E73FFE570BDD7653AA5AF3886F0E16 /* CocoaLumberjack.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46DC5F76E3998AA9DB8D3CFEAD6DDDFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E73FFE570BDD7653AA5AF3886F0E16 /* CocoaLumberjack.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		611751667D8727214BF77FFA3F4B4C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA15C584C476B2B131C3025E854D8BF /* Pods-ALSLog_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ALSLog_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ALSLog_Example/Pods-ALSLog_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ALSLog_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F01D703931B06D7B9BC39EA13C32AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 611400E594DA86C144A784414AAE5898 /* Pods-ALSLog_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ALSLog_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ALSLog_Tests/Pods-ALSLog_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ALSLog_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86F7BEFC893374D943D5ADA9F8F6F5EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566596AF16CB4E9A275FE1112B3BBA7F /* Pods-ALSLog_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ALSLog_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ALSLog_Tests/Pods-ALSLog_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ALSLog_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9849A3F485C0B3A5D7CE135C6A2568C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B9F22616EE2BA2927F1F43A16D9A3F /* Sentry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Sentry/Sentry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sentry/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sentry/Sentry.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Sentry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABF7CFB92FF0FA44C7BD396F76590002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B9F22616EE2BA2927F1F43A16D9A3F /* Sentry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Sentry/Sentry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sentry/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sentry/Sentry.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Sentry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F026A96B6EC022E8F2B583AEB7CD695F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DF52AB7EF96F7E1EF3E23AACE63FF1 /* ALSLog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ALSLog/ALSLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALSLog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALSLog/ALSLog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ALSLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0FC4A80C6F06950025A752398FD834B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DF52AB7EF96F7E1EF3E23AACE63FF1 /* ALSLog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ALSLog/ALSLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALSLog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALSLog/ALSLog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ALSLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9F8C5AA5A5D10076149D3C20EA90200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA81425607168124C494C76895A1EC95 /* Pods-ALSLog_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ALSLog_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ALSLog_Example/Pods-ALSLog_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ALSLog_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D2AB5030F12D879390DEEE8B082BFF /* Build configuration list for PBXNativeTarget "Pods-ALSLog_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				611751667D8727214BF77FFA3F4B4C1B /* Debug */,
+				F9F8C5AA5A5D10076149D3C20EA90200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470A522F2A0C9172DF18EE493F8ADEF4 /* Build configuration list for PBXNativeTarget "Pods-ALSLog_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F01D703931B06D7B9BC39EA13C32AE7 /* Debug */,
+				86F7BEFC893374D943D5ADA9F8F6F5EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85264FAA9BF703EF39A154B4939A8CB9 /* Build configuration list for PBXNativeTarget "ALSLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FC4A80C6F06950025A752398FD834B /* Debug */,
+				F026A96B6EC022E8F2B583AEB7CD695F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FF166D060905D2CBF0C9F55C0AAD280 /* Build configuration list for PBXNativeTarget "Sentry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9849A3F485C0B3A5D7CE135C6A2568C0 /* Debug */,
+				ABF7CFB92FF0FA44C7BD396F76590002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6576B611A607FFFF9D4B2378AF7D412 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DC5F76E3998AA9DB8D3CFEAD6DDDFE /* Debug */,
+				40620C97B78EFA7E3BB721CF26DD74C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

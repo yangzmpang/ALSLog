@@ -1,0 +1,29 @@
+PODS:
+  - ALSLog (0.1.0):
+    - CocoaLumberjack
+    - Sentry
+  - CocoaLumberjack (3.2.1):
+    - CocoaLumberjack/Default (= 3.2.1)
+    - CocoaLumberjack/Extensions (= 3.2.1)
+  - CocoaLumberjack/Default (3.2.1)
+  - CocoaLumberjack/Extensions (3.2.1):
+    - CocoaLumberjack/Default
+  - Sentry (3.7.1):
+    - Sentry/Core (= 3.7.1)
+  - Sentry/Core (3.7.1)
+
+DEPENDENCIES:
+  - ALSLog (from `../`)
+
+EXTERNAL SOURCES:
+  ALSLog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ALSLog: 93f181deaef60a9a0324aa4bebdd1060d1925227
+  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
+  Sentry: e6365a659cc8cc012f85e7e0b9d5c779c0601fb0
+
+PODFILE CHECKSUM: b73b4b1cce55e4204c8bca7f5cb646f3f078b472
+
+COCOAPODS: 1.2.1
