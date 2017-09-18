@@ -8,23 +8,32 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_OPTIONS(NSUInteger, ALSLogFlag){
+typedef enum{
     ALSLogFlagError      = (1 << 0),
     ALSLogFlagWarning    = (1 << 1),
     ALSLogFlagInfo       = (1 << 2),
     ALSLogFlagDebug      = (1 << 3),
     ALSLogFlagVerbose    = (1 << 4)
-};
+}ALSLogFlag;
 
-// 远程调试等级
-typedef NS_ENUM(NSInteger, ALS_REMOTE_Level) {
+typedef enum {
     RemoteLogLevelNone = 1,
     RemoteLogLevelError,
     RemoteLogLevelDebug,
     RemoteLogLevelVerbose
-};
+}ALS_REMOTE_Level;
 
-typedef NS_ENUM(NSUInteger, ALS_LOCAL_Level){
+/*
+ // 远程调试等级
+ typedef NS_ENUM(NSInteger, ALS_REMOTE_Level) {
+ RemoteLogLevelNone = 1,
+ RemoteLogLevelError,
+ RemoteLogLevelDebug,
+ RemoteLogLevelVerbose
+ };
+ */
+
+typedef enum{
     ALSLogLevelOff           = 0,
     ALSLogLevelError        = (ALSLogFlagError),
     ALSLogLevelWarning   = (ALSLogFlagError   | ALSLogFlagWarning),
@@ -32,20 +41,20 @@ typedef NS_ENUM(NSUInteger, ALS_LOCAL_Level){
     ALSLogLevelDebug     = (ALSLogFlagInfo    | ALSLogFlagDebug),
     ALSLogLevelVerbose   = (ALSLogFlagDebug   | ALSLogFlagVerbose),
     ALSLogLevelAll       = NSUIntegerMax
-};
+}ALS_LOCAL_Level;
 
 // 日志类型
-typedef NS_ENUM(NSUInteger, ALS_LOG_TYPE)
+typedef enum
 {
     ALSTypeError = 0,
     ALSTypeWarning,
     ALSTypeInfo,
     ALSTypeDebug,
     ALSTypeVerbose,
-};
+}ALS_LOG_TYPE;
 
 // 日志开关
-typedef NS_ENUM(NSUInteger, ALS_LOG_SWITCHS)
+typedef  enum
 {
     ALSLocalLogOn = 0,
     ALSLocalLogOff,
@@ -53,15 +62,15 @@ typedef NS_ENUM(NSUInteger, ALS_LOG_SWITCHS)
     ALSRemoteLogOff,
     ALSCloseAll,
     ALSOpenAll
-};
+}ALS_LOG_SWITCHS;
 
 // 调试模式
-typedef NS_ENUM(NSUInteger, ALS_LOG_MODE)
+typedef enum
 {
     ALSDebugMode = 0, // debug 模式
     ALSPreReleaseMode, // release 预发模式
     ALSReleaseMode, // release 正式模式
-};
+}ALS_LOG_MODE;
 
 @class DDLog;
 @class DDFileLogger;

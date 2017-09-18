@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALSLog'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'ios log'
 
 # This description is used to generate tags and improve search results.
