@@ -1,16 +1,29 @@
 PODS:
-  - ALSLog (0.1.0):
+  - ALSLog (0.0.3):
     - CocoaLumberjack
-    - Sentry
-  - CocoaLumberjack (3.2.1):
-    - CocoaLumberjack/Default (= 3.2.1)
-    - CocoaLumberjack/Extensions (= 3.2.1)
-  - CocoaLumberjack/Default (3.2.1)
-  - CocoaLumberjack/Extensions (3.2.1):
+    - Sentry (= 3.8.1)
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
     - CocoaLumberjack/Default
-  - Sentry (3.7.1):
-    - Sentry/Core (= 3.7.1)
-  - Sentry/Core (3.7.1)
+  - KSCrash/Core (1.15.12):
+    - KSCrash/Reporting/Filters/Basic
+  - KSCrash/Recording (1.15.12):
+    - KSCrash/Recording/Tools (= 1.15.12)
+  - KSCrash/Recording/Tools (1.15.12)
+  - KSCrash/Reporting/Filters/Base (1.15.12):
+    - KSCrash/Recording
+  - KSCrash/Reporting/Filters/Basic (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - Sentry (3.8.1):
+    - Sentry/Core (= 3.8.1)
+    - Sentry/KSCrash (= 3.8.1)
+  - Sentry/Core (3.8.1)
+  - Sentry/KSCrash (3.8.1):
+    - KSCrash/Core (~> 1.15.12)
 
 DEPENDENCIES:
   - ALSLog (from `../`)
@@ -20,9 +33,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ALSLog: 93f181deaef60a9a0324aa4bebdd1060d1925227
-  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
-  Sentry: e6365a659cc8cc012f85e7e0b9d5c779c0601fb0
+  ALSLog: 6a29a8dcfc171485e295fcd2200873e20f730cad
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  KSCrash: 931b6caeebfbfe0d316007fcd209f6cb9889c624
+  Sentry: 028c9f29afaa9b5c4c53c9b9a743f19130a97c10
 
 PODFILE CHECKSUM: b73b4b1cce55e4204c8bca7f5cb646f3f078b472
 
