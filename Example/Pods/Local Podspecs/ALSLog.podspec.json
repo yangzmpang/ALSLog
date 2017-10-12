@@ -21,7 +21,7 @@
   "source_files": "ALSLog/Classes/**/*",
   "dependencies": {
     "CocoaLumberjack": [
-
+      "3.2.1"
     ],
     "Sentry": [
       "3.8.1"

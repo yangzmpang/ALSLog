@@ -1,12 +1,12 @@
 PODS:
   - ALSLog (0.0.3):
-    - CocoaLumberjack
+    - CocoaLumberjack (= 3.2.1)
     - Sentry (= 3.8.1)
-  - CocoaLumberjack (3.3.0):
-    - CocoaLumberjack/Default (= 3.3.0)
-    - CocoaLumberjack/Extensions (= 3.3.0)
-  - CocoaLumberjack/Default (3.3.0)
-  - CocoaLumberjack/Extensions (3.3.0):
+  - CocoaLumberjack (3.2.1):
+    - CocoaLumberjack/Default (= 3.2.1)
+    - CocoaLumberjack/Extensions (= 3.2.1)
+  - CocoaLumberjack/Default (3.2.1)
+  - CocoaLumberjack/Extensions (3.2.1):
     - CocoaLumberjack/Default
   - KSCrash/Core (1.15.12):
     - KSCrash/Reporting/Filters/Basic
@@ -33,8 +33,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ALSLog: 6a29a8dcfc171485e295fcd2200873e20f730cad
-  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  ALSLog: 635c7134fa425856931e3e7e1676e28335affdbe
+  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
   KSCrash: 931b6caeebfbfe0d316007fcd209f6cb9889c624
   Sentry: 028c9f29afaa9b5c4c53c9b9a743f19130a97c10
 
