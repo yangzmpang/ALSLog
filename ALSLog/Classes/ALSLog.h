@@ -44,42 +44,104 @@ if ( log_mac ) \
 
 @property(nonatomic, strong)NSMutableArray<ALSLogConfig*>* logArray;
 
+/**
+ 安装 sentry  这个在：application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 调用
 
-
-// 安装 sentry  这个在：application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 调用
+ @param url sentry 网站生成的地址
+ @return 是否成功
+ */
 - (BOOL)SetupSentry:(NSString*)url;
 
-// 创建一个log实例 默认的config
+/**
+ 创建一个log实例 默认的config
+
+ @param log_name  日志名
+ @return 是否成功
+ */
 - (BOOL)CreateLogInstance:(NSString*)log_name;
 
-// 不同的config 生成不同的实例
+/**
+ 不同的config 生成不同的实例
+
+ @param log_name 名称
+ @param config config 对象实例
+ @return 是否成功
+ */
 - (BOOL)CreateLogInstance:(NSString*)log_name config:(ALSLogConfig*)config;
 
-// 根据名字获取实例
+/**
+ 根据名字获取实例
+
+ @param log_name 名称
+ @return 返回实例
+ */
 - (ALSLog*)GetLogByname:(NSString*)log_name;
 
 
-// 日志文件默认设置
+/**
+ 日志文件默认设置
+
+ @param configName 名称
+ @return 返回实例
+ */
 - (ALSLogConfig*)SetDefaultConfigure:(NSString*)configName;
 
-// 设置配置文件
+/**
+ 设置配置文件
+
+ @param config config name
+ @return 是否成功
+ */
 - (BOOL)SetLogConfig:(ALSLogConfig*)config;
-// 得到配置文件
+
+/**
+ 得到配置文件
+
+ @return 返回实例
+ */
 - (ALSLogConfig*)GetLogConfig;
-// delete som log
+
+//
+
+/**
+ delete some log
+
+ @param log_name  名称
+ @return 是否成功
+ */
 - (BOOL)RemoveLogByname:(NSString*)log_name;
-// 设置显示日志的列表
+
+/**
+ 设置显示日志的列表
+
+ @param show_log_array 名称列表
+ */
 - (void)SetLogShowList:(NSMutableSet<NSString*>*)show_log_array;
 
 + (instancetype)sharedManager;
 
-// 本地日志
+/**
+ 本地日志
+
+ @param type 类型
+ @param msg 变参
+ */
 - (void)LLog:(ALS_LOG_TYPE)type msg:(NSString*)msg, ...;
 
-// 远程日志
+/**
+ 远程日志
+
+ @param type 类型
+ @param msg 变参列表
+ */
 - (void)RLog:(ALS_LOG_TYPE)type msg:(NSString*)msg,...;
 
-// 本地和远程都生成日志
+/**
+ 本地和远程都生成日志
+
+ @param type 类型
+ @param msg 变参
+ */
 - (void)LR_Log:(ALS_LOG_TYPE)type msg:(NSString*)msg,...;
 
 @end

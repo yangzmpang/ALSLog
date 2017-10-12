@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALSLog'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'ios log'
 
 # This description is used to generate tags and improve search results.
@@ -40,5 +40,5 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 s.dependency 'CocoaLumberjack'
-s.dependency 'Sentry'#, :git => 'https://github.com/getsentry/sentry-cocoa.git', :subspecs => ['Core', 'KSCrash'], :tag => '3.3.3'
+s.dependency 'Sentry', '3.8.1'
 end

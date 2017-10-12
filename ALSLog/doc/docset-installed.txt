@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/yangziminyangzimin/Library/Developer/Shared/Documentation/DocSets/com.alisports.ALSLog.docset
+Time: 2017-09-18 06:58:11 +0000

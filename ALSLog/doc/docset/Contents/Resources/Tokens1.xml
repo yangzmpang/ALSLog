@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ALSLog.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ALSLog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/SetupSentry:</TokenIdentifier>
+			<Abstract type="html">安装 sentry  这个在：application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 调用</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)SetupSentry:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">sentry 网站生成的地址</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">&lt;#return value description#&gt;</Abstract></ReturnValue>
+			<Anchor>//api/name/SetupSentry:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/CreateLogInstance:</TokenIdentifier>
+			<Abstract type="html">创建一个log实例 默认的config</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)CreateLogInstance:(NSString *)log_name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>log_name</Name>
+					<Abstract type="html">日志名</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/CreateLogInstance:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/CreateLogInstance:config:</TokenIdentifier>
+			<Abstract type="html">不同的config 生成不同的实例</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)CreateLogInstance:(NSString *)log_name config:(ALSLogConfig *)config</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>log_name</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter><Parameter>
+					<Name>config</Name>
+					<Abstract type="html">config 对象实例</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/CreateLogInstance:config:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/GetLogByname:</TokenIdentifier>
+			<Abstract type="html">根据名字获取实例</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (ALSLog *)GetLogByname:(NSString *)log_name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>log_name</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回实例</Abstract></ReturnValue>
+			<Anchor>//api/name/GetLogByname:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/SetDefaultConfigure:</TokenIdentifier>
+			<Abstract type="html">日志文件默认设置</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (ALSLogConfig *)SetDefaultConfigure:(NSString *)configName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configName</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回实例</Abstract></ReturnValue>
+			<Anchor>//api/name/SetDefaultConfigure:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/SetLogConfig:</TokenIdentifier>
+			<Abstract type="html">设置配置文件</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)SetLogConfig:(ALSLogConfig *)config</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>config</Name>
+					<Abstract type="html">config name</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/SetLogConfig:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/GetLogConfig</TokenIdentifier>
+			<Abstract type="html">得到配置文件</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (ALSLogConfig *)GetLogConfig</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回实例</Abstract></ReturnValue>
+			<Anchor>//api/name/GetLogConfig</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/RemoveLogByname:</TokenIdentifier>
+			<Abstract type="html">delete some log</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)RemoveLogByname:(NSString *)log_name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>log_name</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否成功</Abstract></ReturnValue>
+			<Anchor>//api/name/RemoveLogByname:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/SetLogShowList:</TokenIdentifier>
+			<Abstract type="html">设置显示日志的列表</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (void)SetLogShowList:(NSMutableSet&lt;NSString*&gt; *)show_log_array</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>show_log_array</Name>
+					<Abstract type="html">名称列表</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/SetLogShowList:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/LLog:msg:</TokenIdentifier>
+			<Abstract type="html">本地日志</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (void)LLog:(ALS_LOG_TYPE)type msg:(NSString *)msg, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>msg</Name>
+					<Abstract type="html">变参</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/LLog:msg:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/RLog:msg:</TokenIdentifier>
+			<Abstract type="html">远程日志</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (void)RLog:(ALS_LOG_TYPE)type msg:(NSString *)msg, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>msg</Name>
+					<Abstract type="html">变参列表</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/RLog:msg:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSLog/LR_Log:msg:</TokenIdentifier>
+			<Abstract type="html">本地和远程都生成日志</Abstract>
+			<DeclaredIn>ALSLog.h</DeclaredIn>
+			
+			<Declaration>- (void)LR_Log:(ALS_LOG_TYPE)type msg:(NSString *)msg, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>msg</Name>
+					<Abstract type="html">变参</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/LR_Log:msg:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
