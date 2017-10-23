@@ -1,5 +1,5 @@
 PODS:
-  - ALSLog (0.0.3):
+  - ALSLog (0.0.4):
     - CocoaLumberjack (= 3.2.1)
     - Sentry (= 3.8.1)
   - CocoaLumberjack (3.2.1):
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ALSLog: 635c7134fa425856931e3e7e1676e28335affdbe
+  ALSLog: 1e7030e70b87a6997976510c80c4e2eaf72e167e
   CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
   KSCrash: 931b6caeebfbfe0d316007fcd209f6cb9889c624
   Sentry: 028c9f29afaa9b5c4c53c9b9a743f19130a97c10

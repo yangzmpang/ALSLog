@@ -14,6 +14,7 @@
 #import "SentryLog.h"
 #import "ALSLogConfig.h"
 #import "Sentry.h"
+#import "SentryClient+Internal.h"
 #import "ALSLogData.h"
 #import "CocoaLumberjack.h"
 
